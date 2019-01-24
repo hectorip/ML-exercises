@@ -6,6 +6,7 @@ import pandas as pd
 import sklearn
 
 # loading datasources
+
 data_happiness = pd.read_csv("data.csv", thousands=',') # didn't know about 'thousands'
 # gdp_per_capita = pd.read_csv("gdp_data.csv", thousands=',')
 
@@ -21,4 +22,4 @@ model.fit(X, Y)
 
 X_example = [[12345]] # GDP per capita
 
-model.predict(X_example) # predicts the hapinnes or life satisfaction
+model.predict(X_example) # predicts the hapiness or life satisfaction
